@@ -78,6 +78,4 @@ zmodule ohmyzsh/ohmyzsh --root plugins/git-auto-fetch
 zmodule ohmyzsh/ohmyzsh --root plugins/git-commit
 zmodule ohmyzsh/ohmyzsh --root plugins/git-extras
 zmodule ohmyzsh/ohmyzsh --root plugins/gitfast
-
-
-
+zmodule ohmyzsh/ohmyzsh --root plugins/history
