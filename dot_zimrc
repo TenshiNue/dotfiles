@@ -64,6 +64,7 @@ zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
 zstyle ':omz:plugins:alias-finder' longer yes # disabled by default
 zstyle ':omz:plugins:alias-finder' exact yes # disabled by default
 zstyle ':omz:plugins:alias-finder' cheaper yes # disabled by default
+zmodule ohmyzsh/ohmyzsh --root plugins/archlinux
 zmodule ohmyzsh/ohmyzsh --root plugins/colored-man-pages
 zmodule ohmyzsh/ohmyzsh --root plugins/colorize
 zmodule ohmyzsh/ohmyzsh --root plugins/command-not-found
@@ -72,10 +73,14 @@ zmodule ohmyzsh/ohmyzsh --root plugins/dnf
 zmodule ohmyzsh/ohmyzsh --root plugins/encode64
 zmodule ohmyzsh/ohmyzsh --root plugins/extract
 zmodule ohmyzsh/ohmyzsh --root plugins/eza
-# zmodule ohmyzsh/ohmyzsh --root plugins/fd
+#zmodule ohmyzsh/ohmyzsh --root plugins/fd
 zmodule ohmyzsh/ohmyzsh --root plugins/git
 zmodule ohmyzsh/ohmyzsh --root plugins/git-auto-fetch
 zmodule ohmyzsh/ohmyzsh --root plugins/git-commit
 zmodule ohmyzsh/ohmyzsh --root plugins/git-extras
 zmodule ohmyzsh/ohmyzsh --root plugins/gitfast
 zmodule ohmyzsh/ohmyzsh --root plugins/history
+zmodule ohmyzsh/ohmyzsh --root plugins/jsontools
+zmodule ohmyzsh/ohmyzsh --root plugins/rust
+zmodule ohmyzsh/ohmyzsh --root plugins/universalarchive
+zmodule ohmyzsh/ohmyzsh --root plugins/urltools
