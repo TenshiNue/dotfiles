@@ -1,0 +1,8 @@
+# BEGIN_KITTY_THEME Gruvbox Dark
+include current-theme.conf
+shell /home/$USER/.cargo/bin/nu
+font_family FiraCode Nerd Font Mono
+font_size 18
+
+
+# END_KITTY_THEME
