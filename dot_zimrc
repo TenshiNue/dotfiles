@@ -28,7 +28,7 @@ zmodule duration-info
 # Exposes git repository status information to prompts, used by asciiship.
 zmodule git-info
 # A heavily reduced, ASCII-only version of the Spaceship and Starship prompts.
-#zmodule asciiship
+zmodule asciiship
 
 #
 # Completion
@@ -72,18 +72,12 @@ zmodule ohmyzsh/ohmyzsh --root plugins/dnf
 zmodule ohmyzsh/ohmyzsh --root plugins/encode64
 zmodule ohmyzsh/ohmyzsh --root plugins/extract
 zmodule ohmyzsh/ohmyzsh --root plugins/eza
-zmodule ohmyzsh/ohmyzsh --root plugins/fd
+# zmodule ohmyzsh/ohmyzsh --root plugins/fd
 zmodule ohmyzsh/ohmyzsh --root plugins/git
 zmodule ohmyzsh/ohmyzsh --root plugins/git-auto-fetch
 zmodule ohmyzsh/ohmyzsh --root plugins/git-commit
 zmodule ohmyzsh/ohmyzsh --root plugins/git-extras
 zmodule ohmyzsh/ohmyzsh --root plugins/gitfast
-
-
-
-
-
-
 
 
 
