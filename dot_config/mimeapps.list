@@ -1,0 +1,11 @@
+[Added Associations]
+x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+image/png=nsxiv.desktop;
+image/jpeg=nsxiv.desktop;
+
+[Default Applications]
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+image/png=nsxiv.desktop
+image/jpeg=nsxiv.desktop
