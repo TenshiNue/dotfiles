@@ -40,13 +40,16 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
-vim.cmd[[colorscheme tokyonight-night]]
-
-
-
+vim.cmd [[colorscheme tokyonight-night]]
 -- Telescope mappings
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {desc = 'Find Files'})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {desc = 'Grep'})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {desc = 'Buffers'})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {desc = 'Help'})
+local builtin = require 'telescope.builtin'
+vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Find Files' })
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Grep' })
+vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Buffers' })
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Help' })
+
+--Tabs
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.expandtab = True
