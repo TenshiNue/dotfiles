@@ -1,7 +1,7 @@
 #Git
 sudo pacman -S --needed git base-devel
 # Basics
-sudo pacman -S chezmoi zsh git-delta zoxide fd bat eza unzip unrar pavucontrol neovim kdeconnect sshfs luarocks nodejs 
+sudo pacman -S firefox zsh git-delta zoxide fd bat eza unzip unrar pavucontrol neovim kdeconnect sshfs luarocks nodejs 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 #yay
