@@ -81,6 +81,6 @@ zmodule ohmyzsh/ohmyzsh --root plugins/git-extras
 zmodule ohmyzsh/ohmyzsh --root plugins/gitfast
 zmodule ohmyzsh/ohmyzsh --root plugins/history
 zmodule ohmyzsh/ohmyzsh --root plugins/jsontools
-zmodule ohmyzsh/ohmyzsh --root plugins/rust
+#zmodule ohmyzsh/ohmyzsh --root plugins/rust
 zmodule ohmyzsh/ohmyzsh --root plugins/universalarchive
 zmodule ohmyzsh/ohmyzsh --root plugins/urltools
