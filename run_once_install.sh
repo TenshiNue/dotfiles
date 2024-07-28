@@ -2,7 +2,7 @@
 #Git
 sudo pacman -S --needed git base-devel
 # Basics
-sudo pacman -S firefox zsh git-delta zoxide fd bat eza unzip unrar pavucontrol neovim kdeconnect sshfs luarocks nodejs npm github-cli tree man less qbittorrent xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon steam discord zathura zathura-cb zathura-pdf-mupdf nsxiv cliphist
+sudo pacman -S firefox zsh git-delta fd bat eza unzip unrar pavucontrol neovim kdeconnect sshfs luarocks nodejs npm github-cli tree man less qbittorrent xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon steam discord zathura zathura-cb zathura-pdf-mupdf nsxiv cliphist wezterm foot
 #Yazi
 sudo pacman -S yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide
 
@@ -26,3 +26,6 @@ sudo pacman -S noto-fonts-cjk
 chsh -s /usr/bin/zsh
 #Set Nsxiv settings
 xrdb -load ~/.Xresources
+#cursor
+#TODO missing to set script for hyprcursor
+yay bibata-cursor-theme-bin
