@@ -24,4 +24,5 @@ curl -s https://ohmyposh.dev/install.sh | bash -s
 sudo pacman -S noto-fonts-cjk
 #Set default shell
 chsh -s /usr/bin/zsh
-
+#Set Nsxiv settings
+xrdb -load ~/.Xresources

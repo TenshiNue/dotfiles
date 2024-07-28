@@ -23,6 +23,7 @@ return {
         lua = { 'stylua' },
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
         toml = { 'taplo' },
+        sh = { 'shfmt', 'shellharden' },
       },
       -- Set default options
       default_format_opts = {
