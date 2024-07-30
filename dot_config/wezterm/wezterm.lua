@@ -2,7 +2,7 @@ wezterm = require("wezterm")
 local config = {}
 config.default_prog = { "nu", "-l" }
 config.font_size = 18
-config.color_scheme = "tokyonight_night"
+config.color_scheme = "Catppuccin Mocha"
 --Remove window in gnome
 config.window_decorations = "RESIZE"
 --Stop close prompt
