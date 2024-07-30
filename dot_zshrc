@@ -143,3 +143,6 @@ function yy() {
 	fi
 	rm -f -- "$tmp"
 }
+
+#Terminal displaying % sometimes
+unsetopt PROMPT_SP
