@@ -1,6 +1,6 @@
 wezterm = require("wezterm")
 local config = {}
-config.default_prog = { "nu", "-l" }
+config.default_prog = { "fish", "-l" }
 config.font_size = 18
 config.color_scheme = "Catppuccin Mocha"
 --Remove window in gnome
@@ -15,6 +15,7 @@ bar.apply_to_config(config, {
 		username = false,
 		clock = false,
 		hostname = false,
+		cwd = false,
 	},
 })
 return config
