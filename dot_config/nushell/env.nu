@@ -99,9 +99,13 @@ $env.NU_PLUGIN_DIRS = [
 
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
+#add local bin to PATH
+$env.PATH = ($env.PATH | split row (char esep) | append "/home/ten/.local/bin")
 # zoxide
 zoxide init nushell | save -f ~/.zoxide.nu
 # carapace
 $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
 mkdir ~/.cache/carapace
 carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
+# oh-myposh
+oh-my-posh init nu --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/powerlevel10k_rainbow.omp.json'

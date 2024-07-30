@@ -1,8 +1,6 @@
 # Nushell Config File
 #
 # version = "0.96.0"
-
-# For more information on defining custom themes, see
 # https://www.nushell.sh/book/coloring_and_theming.html
 # And here is the theme collection
 # https://github.com/nushell/nu_scripts/tree/main/themes
@@ -890,10 +888,21 @@ $env.config = {
         }
     ]
 }
-
-#starship
-use ~/.cache/starship/init.nu
-#zoxide
+# starship
+#use ~/.cache/starship/init.nu
+# zoxide
 source ~/.zoxide.nu
-#carapace
+# carapace
 source ~/.cache/carapace/init.nu
+# yazi
+def --env yy [...args] {
+  let tmp = (mktemp -t "yazi-cwd.XXXXXX")
+  yazi ...$args --cwd-file $tmp
+  let cwd = (open $tmp)
+  if $cwd != "" and $cwd != $env.PWD {
+    cd $cwd
+    }
+  rm -fp $tmp
+}
+# oh-my-posh
+source ~/.oh-my-posh.nu
