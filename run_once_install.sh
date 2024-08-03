@@ -1,29 +1,21 @@
-#!/bin/sh
-#Git
-sudo pacman -S --needed git base-devel
-# Basics
-sudo pacman -S firefox zsh git-delta fd bat eza unzip unrar pavucontrol neovim kdeconnect sshfs luarocks nodejs npm github-cli tree man less qbittorrent xf86-video-amdgpu mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon steam discord zathura zathura-cb zathura-pdf-mupdf nsxiv cliphist wezterm foot nushell
-#Yazi
-sudo pacman -S yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide
+# Install git
+sudo pacman -S --needed git base-devel -y
 # Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-#yay
+sudo pacman -S rustup -y
+rustup default stable
+#Paru
 cd ~
 mkdir Repos
 cd Repos
-git clone https://aur.archlinux.org/yay.git
-cd yay
+git clone https://aur.archlinux.org/paru.git
+cd paru
 makepkg -si
-#carapace
-yay carapace-bin
-#oh-my-posh
-curl -s https://ohmyposh.dev/install.sh | bash -s
-#Japanese fonts
-sudo pacman -S noto-fonts-cjk
-#Set default shell
-chsh -s /usr/bin/zsh
-#Set Nsxiv settings
+# Packages
+packages=("firefox" "neovim" "wl-clipboard" "git-delta" "fd" "bat" "eza" "unzip" "unrar" "pavucontrol" "sshfs" "luarocks" "nodejs" "npm" "github-cli" "tree" "man" "less" "qbittorrent" "xf86-video-amdgpu" "mesa" "lib32-mesa" "vulkan-radeon" "lib32-vulkan-radeon" "steam" "zathura" "zathura-cb" "zathura-pdf-mupdf" "nsxiv" "fish" "yazi" "ffmpegthumbnailer" "unarchiver" "jq" "poppler" "fd" "ripgrep" "fzf" "zoxide" "noto-fonts-cjk" "bibata-cursor-theme-bin" "ttf-jetbrains-mono-nerd" "ttf-ms-win11-auto" "kitty" "wezterm-git" "waydroid" "fastfetch" "ufw" "gufw" "freerdp" "remmina" "gnome-browser-connector" "mpv" "vesktop-bin" "torbrowser-launcher")
+for package in "${packages[@]}"; do
+  echo "$package"
+  paru -S "$package"
+done
+paru -c
+#Nsxiv config
 xrdb -load ~/.Xresources
-#cursor
-#TODO missing to set script for hyprcursor
-yay bibata-cursor-theme-bin
