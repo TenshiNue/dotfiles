@@ -2,7 +2,7 @@ wezterm = require("wezterm")
 local config = {}
 config.default_prog = { "fish", "-l" }
 config.font_size = 18
-config.color_scheme = "Kanagawa Dragon (Gogh)"
+config.color_scheme = 'Rosé Pine (Gogh)'
 --Remove window in gnome
 config.window_decorations = "RESIZE"
 --Stop close prompt
