@@ -1,8 +1,9 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+  atuin init fish | source
 end
 fish_add_path ~/.local/bin/
 starship init fish | source
+zoxide init fish | source
 function yy
   set tmp (mktemp -t "yazi-cwd.XXXXXX")
   yazi $argv --cwd-file="$tmp"
