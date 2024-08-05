@@ -1,0 +1,10 @@
+theme "rose-pine"
+on_force_close "quit"
+pane_frames false
+simplified_ui true
+default_shell "fish"
+ui {
+    pane_frames {
+        hide_session_name true
+    }
+}
