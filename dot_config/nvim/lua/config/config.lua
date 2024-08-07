@@ -43,7 +43,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
-vim.cmd.colorscheme 'rose-pine'
+vim.cmd.colorscheme 'kanagawa'
 -- Telescope mappings
 local builtin = require 'telescope.builtin'
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Find Files' })

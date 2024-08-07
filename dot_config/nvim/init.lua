@@ -2,6 +2,15 @@ require 'config.lazy'
 require 'config.config'
 require('mason').setup()
 require('nvim-tree').setup()
+require('lualine').setup()
+require('leap').create_default_mappings()
+-- Define equivalence classes for brackets and quotes, in addition to
+-- the default whitespace group.
+require('leap').opts.equivalence_classes = { ' \t\r\n', '([{', ')]}', '\'"`' }
+
+-- Use the traversal keys to repeat the previous motion without explicitly
+-- invoking Leap.
+require('leap.user').set_repeat_keys('<enter>', '<backspace>')
 -- Harpoon setup move it to other place
 local harpoon = require 'harpoon'
 harpoon:setup()
