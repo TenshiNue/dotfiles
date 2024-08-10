@@ -15,6 +15,7 @@ return {
       ensure_installed = {
         'bashls',
         'lua_ls',
+        'jsonls',
       },
     }
     require('mason-tool-installer').setup {
@@ -22,6 +23,7 @@ return {
         'stylua',
         'shfmt',
         'shellharden',
+        'prettier',
       },
     }
   end,

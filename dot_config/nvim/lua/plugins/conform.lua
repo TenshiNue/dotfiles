@@ -21,6 +21,8 @@ return {
     formatters_by_ft = {
       lua = { 'stylua' },
       toml = { 'taplo' },
+      json = { 'prettier' },
+      css = { 'prettier' },
     },
     -- Set default options
     default_format_opts = {
