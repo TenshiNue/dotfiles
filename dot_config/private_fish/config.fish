@@ -2,6 +2,7 @@ if status is-interactive
   atuin init fish | source
 end
 fish_add_path ~/.local/bin/
+fish_add_path ~/.cargo/bin/
 starship init fish | source
 zoxide init fish | source
 function yy
