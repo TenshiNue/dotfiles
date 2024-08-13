@@ -1,10 +1,9 @@
 wezterm = require("wezterm")
 local config = {}
 config.default_prog = { "fish", "-l" }
-config.font_size = 24
-config.color_scheme = "Rosé Pine (Gogh)"
+config.font_size = 18
+config.color_scheme = "Tokyo Night"
 --Remove window in gnome
-config.window_decorations = "NONE"
 --Stop close prompt
 config.window_close_confirmation = "NeverPrompt"
 --bar
@@ -18,5 +17,4 @@ config.tab_and_split_indices_are_zero_based = false
 config.tab_bar_at_bottom = true
 config.tab_max_width = 25
 config.use_fancy_tab_bar = false
-
 return config
