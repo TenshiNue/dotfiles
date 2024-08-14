@@ -1,9 +1,9 @@
 return {
-  "goolord/alpha-nvim",
+  'goolord/alpha-nvim',
   enabled = true,
   config = function()
-    local dashboard = require("alpha.themes.dashboard")
-    --TODO configure starter page
-    require("alpha").setup(dashboard.opts)
+    -- TODO complete config
+    local dashboard = require 'alpha.themes.dashboard'
+    require('alpha').setup(dashboard.opts)
   end,
 }

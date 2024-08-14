@@ -1,6 +1,7 @@
 if status is-interactive
   atuin init fish | source
 end
+set -gx EDITOR nvim 
 fish_add_path ~/.local/bin/
 fish_add_path ~/.cargo/bin/
 starship init fish | source
